@@ -1,0 +1,26 @@
+﻿<title>Customer List</title>
+<html>
+
+<head>
+</head>
+<body>
+    <table>
+        <tr style="border:double;">
+            <th style="width:150px; border:double;">Customer Id</th>
+            <th style="width:150px; border:double;">Customer Name</th>
+            <th style="width:150px; border:double;">Customer City</th>
+            <th style="width:150px; border:double;">Customer Address</th>
+        </tr>
+            @foreach (var customer in ViewBag.CustomerDetails)
+            {
+                <tr style="border:double;">
+                    <td style="width:150px; border:double;">@customer.CustomerId</td>
+                    <td style="width:150px; border:double;">@customer.CustomerName</td>
+                    <td style="width:150px; border:double;">@customer.CustomerCity</td>
+                    <td style="width:150px; border:double;">@customer.CustomerAddress</td>
+                </tr>
+            }
+        
+    </table>
+</body>
+</html>
